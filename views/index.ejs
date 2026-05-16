@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+</head>
+<body>
+
+    <h1>Enviar Feedback</h1>
+
+    <form action="/feedbacks/enviar" method="POST">
+
+        <input
+            type="text"
+            name="nome"
+            placeholder="Nome"
+            required
+        >
+
+        <br><br>
+
+        <textarea
+            name="comentario"
+            placeholder="Comentário"
+            required
+        ></textarea>
+
+        <br><br>
+
+        <button type="submit">
+            Enviar
+        </button>
+
+    </form>
+
+    <br>
+
+    <a href="/feedbacks/lista">
+        Ver feedbacks
+    </a>
+
+</body>
+</html>
